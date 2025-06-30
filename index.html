@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque ea eaque
+      non sapiente quasi sequi mollitia velit sit exercitationem odit.
+    </p>
+
+    <script>
+
+      // Character at index 10
+
+      let sentence = "Learning JavaScript is fun and I am ignoring punctuation and proper grammar for now";
+      console.log(sentence[10]);
+
+
+      //Character 5 positions from the end
+
+      console.log(sentence[sentence.length - 5]);
+
+
+      //Convert to uppercase
+      console.log(sentence.toUpperCase());
+
+      //Convert to lowercase for form validation
+      console.log(sentence.toLowerCase());
+
+
+      //Extract "sentence and I" using substring()
+      let startIndex = sentence.indexOf("sentence and I");
+      console.log(sentence.substring(startIndex, startIndex + "sentence and I".length));
+
+      //Using a negative number as the start index
+         If you use a negative number as the start index in `substring()`, it will be treated as 0.
+
+      //Split the sentence into words
+      console.log(sentence.split(" "));
+
+      //Split using the letter "i"
+      console.log(sentence.split("i"));
+
+      //Index of the first occurrence of "the"
+      console.log(sentence.indexOf("the"));
+
+      //Index of the last occurrence of "a
+      console.log(sentence.lastIndexOf("a")); // Output: 46
+
+      //heck if the sentence includes "grammar"
+      console.log(sentence.includes("grammar"));
+
+      //Case-insensitive search for "SCRIPTING"
+      console.log(sentence.toLowerCase().includes("scripting"));
+
+      //Check if the sentence starts with "this"
+
+      console.log(sentence.startsWith("this"));
+      //Check if the sentence starts with "L"
+      console.log(sentence.startsWith("L"));
+
+      //Combined Methods - Check for "SENTENCE" in uppercase
+      console.log(sentence.toUpperCase().includes("SENTENCE"));
+
+      //Word Extraction Practice - Get the word before "skipping"
+      let words = sentence.split(" ");
+      let index = words.indexOf("ignoring");
+      console.log(words[index - 1]);
+    </script>
+  </body>
+</html>
