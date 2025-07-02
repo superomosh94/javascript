@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let mySentence =
+        "this is my sentence and i am skipping the punctuation and grammar";
+
+      // charAt(30) returns the character at index 30 (0-based)
+      console.log(mySentence.charAt(30)); // Output: "u" (from "punctuation")
+
+      // charAt(-30) returns an empty string since negative indices aren't valid
+      console.log(mySentence.charAt(-30)); // Output: ""
+
+      // Converts the entire string to uppercase
+      console.log(mySentence.toUpperCase());
+      // Output: "THIS IS MY SENTENCE AND I AM SKIPPING THE PUNCTUATION AND GRAMMAR"
+
+      // Converts the entire string to lowercase (though it's already lowercase)
+      console.log(mySentence.toLowerCase());
+      // Output: "this is my sentence and i am skipping the punctuation and grammar"
+
+      // Returns substring from index 3 to 10 (not including 10)
+      console.log(mySentence.substring(3, 10)); // Output: "s is m"
+
+      // Splits the string at every "i", removing the "i"s
+      console.log(mySentence.split("i"));
+      // Output: ["th", "s ", "s my sentence and ", " am sk", "pp", "ng the punctuat", "on and grammar"]
+
+      // Splits the string at every space
+      console.log(mySentence.split(" "));
+      // Output: ["this", "is", "my", "sentence", "and", "i", "am", "skipping", "the", "punctuation", "and", "grammar"]
+
+      // Returns the last index where "i" appears
+      console.log(mySentence.lastIndexOf("i")); // Output: 54 (last "i" in "punctuation")
+
+      // Checks if uppercase version of string includes "SENTENCE"
+      console.log(mySentence.toUpperCase().includes("SENTENCE")); // Output: true
+
+      // Checks if string starts with "this"
+      console.log(mySentence.startsWith("this")); // Output: true
+    </script>
+  </body>
+</html>
